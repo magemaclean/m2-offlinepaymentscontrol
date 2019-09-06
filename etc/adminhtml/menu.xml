@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MageMaclean_OfflinePaymentsControl::offlinepaymentscontrol" title="Offline Payments Control" module="MageMaclean_OfflinePaymentsControl" sortOrder="90" resource="MageMaclean_OfflinePaymentsControl::configuration" parent="MageMaclean_Core::magemaclean"/>
+        <add id="MageMaclean_OfflinePaymentsControl::configuration" title="Configuration" module="MageMaclean_OfflinePaymentsControl" sortOrder="10" action="adminhtml/system_config/edit/section/offlinepaymentscontrol" resource="MageMaclean_OfflinePaymentsControl::configuration" parent="MageMaclean_OfflinePaymentsControl::offlinepaymentscontrol"/>
+    </menu>
+</config>

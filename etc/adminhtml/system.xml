@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="offlinepaymentscontrol" translate="label" type="text" sortOrder="901" showInDefault="1" showInWebsite="1" showInStore="0">
+            <label>Offline Payments Control</label>
+            <tab>magemaclean</tab>
+            <resource>MageMaclean_OfflinePaymentsControl::configuration</resource>
+            <group id="checkout" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Frontend Checkout</label>
+                <field id="methods_disabled" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Disable Methods</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+            </group>
+
+            <group id="adminhtml" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Adminhtml Order</label>
+                <field id="methods_disabled" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Disable Methods</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
