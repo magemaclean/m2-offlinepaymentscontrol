@@ -39,7 +39,20 @@ class Data extends AbstractHelper
             $storeId
         );
 
-        return explode(",", $value);
+        $values = explode(",", $value);
+        return (in_array($subject->getCode(), $methodsDisabled)) ? false : true;
+    }
+
+    public function getInvoiceOption($field, $code, $storeId = null)
+    {
+        $value = $this->scopeConfig->getValue(
+            'offlinepaymentscontrol/invoice/' . $field,
+            ScopeInterface::SCOPE_STORE,
+            $storeId
+        );
+
+        $values = explode(",", $value);
+        return (in_array($code, $values)) ? true : false;
     }
 
     public function getPaymentMethodOptions() {

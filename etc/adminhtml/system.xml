@@ -20,6 +20,34 @@
                     <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
                 </field>
             </group>
+
+            <group id="invoice" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Invoice Options</label>
+                <field id="can_authorize" translate="label" type="multiselect" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Can Authorize</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+                <field id="can_capture" translate="label" type="multiselect" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Can Capture</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+                <field id="can_capture_partial" translate="label" type="multiselect" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Can Capture Partial</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+                <field id="can_refund" translate="label" type="multiselect" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Can Refund</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+                <field id="can_refund_partial" translate="label" type="multiselect" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Can Refund Partial</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+                <field id="can_void" translate="label" type="multiselect" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enable Can Void</label>
+                    <source_model>MageMaclean\OfflinePaymentsControl\Model\Config\Source\Payment\Methods</source_model>
+                </field>
+            </group>
         </section>
     </system>
 </config>
