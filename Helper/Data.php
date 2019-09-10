@@ -31,7 +31,7 @@ class Data extends AbstractHelper
         parent::__construct($context);
     }
 
-    public function getMethodsDisabled($area, $storeId = null)
+    public function getMethodsDisabled($area, $code, $storeId = null)
     {
         $value = $this->scopeConfig->getValue(
             'offlinepaymentscontrol/' . $area . '/methods_disabled',
@@ -40,7 +40,7 @@ class Data extends AbstractHelper
         );
 
         $values = explode(",", $value);
-        return (in_array($subject->getCode(), $methodsDisabled)) ? false : true;
+        return (in_array($code, $values)) ? false : true;
     }
 
     public function getInvoiceOption($field, $code, $storeId = null)

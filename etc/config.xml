@@ -1,6 +1,21 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        
+        <offlinepaymentscontrol>
+            <checkout>
+                <methods_disabled></methods_disabled>
+            </checkout>
+            <adminhtml>
+                <methods_disabled></methods_disabled>
+            </adminhtml>
+            <invoice>
+                <can_authorize>0</can_authorize>
+                <can_capture>0</can_capture>
+                <can_capture_partial>0</can_capture_partial>
+                <can_refund>0</can_refund>
+                <can_refund_partial>0</can_refund_partial>
+                <can_void>0</can_void>
+            </invoice>
+        </offlinepaymentscontrol>
     </default>
 </config>
