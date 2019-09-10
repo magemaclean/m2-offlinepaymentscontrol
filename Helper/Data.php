@@ -31,7 +31,7 @@ class Data extends AbstractHelper
         parent::__construct($context);
     }
 
-    public function getMethodsDisabled($area, $code, $storeId = null)
+    public function getCanUseMethod($area, $code, $storeId = null)
     {
         $value = $this->scopeConfig->getValue(
             'offlinepaymentscontrol/' . $area . '/methods_disabled',

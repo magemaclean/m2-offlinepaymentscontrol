@@ -12,4 +12,8 @@
    <type name="Magento\OfflinePayments\Model\Purchaseorder">
        <plugin name="offlinepaymentscontrol_purchaseorder" type="MageMaclean\OfflinePaymentsControl\Plugin\Payment\Method" sortOrder="10"/>
    </type>
+
+   <type name="Magento\Multishipping\Model\Payment\Method\Specification\Enabled">
+       <plugin name="offlinepaymentscontrol_multishipping_payment_method" type="MageMaclean\OfflinePaymentsControl\Plugin\Multishipping\Payment\Method" sortOrder="10"/>
+   </type>
 </config>

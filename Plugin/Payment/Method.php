@@ -14,12 +14,12 @@ class Method {
 
     public function afterCanUseInternal($subject, $result)
     {
-        return $this->_helper->getMethodsDisabled('adminhtml', $subject->getCode(), $subject->getStore());
+        return $this->_helper->getCanUseMethod('adminhtml', $subject->getCode(), $subject->getStore());
     }
 
     public function afterCanUseCheckout($subject, $result)
     {
-        return $this->_helper->getMethodsDisabled('checkout', $subject->getCode(), $subject->getStore());
+        return $this->_helper->getCanUseMethod('checkout', $subject->getCode(), $subject->getStore());
     }
 
     public function afterCanAuthorize($subject, $result)
