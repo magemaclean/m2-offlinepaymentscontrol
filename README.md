@@ -1,2 +1,2 @@
-# magemaclean/offlinepaymentscontrol
+# magemaclean/m2-offlinepaymentscontrol
 
