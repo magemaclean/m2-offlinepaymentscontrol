@@ -39,6 +39,7 @@ class Data extends AbstractHelper
             $storeId
         );
 
+        if(!$value) return true;
         $values = explode(",", $value);
         return (in_array($code, $values)) ? false : true;
     }
@@ -51,6 +52,7 @@ class Data extends AbstractHelper
             $storeId
         );
 
+        if(!$value) return true;
         $values = explode(",", $value);
         return (in_array($code, $values)) ? true : false;
     }
